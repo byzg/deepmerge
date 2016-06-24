@@ -1,5 +1,5 @@
 // This is fork of deepmerge library at the state https://github.com/KyleAMathews/deepmerge/tree/49cc4edcaba6749951d7f06f269e594d7bcafa22
-// Orignal repository: https://github.com/KyleAMathews/deepmerge
+// Original repository: https://github.com/KyleAMathews/deepmerge
 // Fork repository: https://github.com/byzg/deepmerge
 // Fork meaning: during two arrays of objects is megring it should not merge different objects in target array
 
