@@ -1,4 +1,7 @@
-// This is original deepmerge library by https://github.com/KyleAMathews/deepmerge
+// This is fork of deepmerge library at the state https://github.com/KyleAMathews/deepmerge/tree/49cc4edcaba6749951d7f06f269e594d7bcafa22
+// Orignal repository: https://github.com/KyleAMathews/deepmerge
+// Fork repository: https://github.com/byzg/deepmerge
+// Fork meaning: during two arrays of objects is megring it should not merge different objects in target array
 
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -20,8 +23,6 @@ return function deepmerge(target, src) {
         src.forEach(function(e, i) {
             if (typeof dst[i] === 'undefined') {
                 dst[i] = e;
-            } else if (typeof e === 'object') {
-                dst[i] = deepmerge(target[i], e);
             } else {
                 if (target.indexOf(e) === -1) {
                     dst.push(e);
